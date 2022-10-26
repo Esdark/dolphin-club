@@ -47,6 +47,32 @@
     <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
     <!--responsive css-->
     <link rel="stylesheet" type="text/css" href="assets/css/responsive.css" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d"
+            },
+            fontFamily: {
+              nunito: "'Nunito Sans', sans-serif;"
+            }
+          },
+          container: {
+            center: true,
+            padding: "1.5rem"
+          }
+        }
+      };
+    </script>
+    <style type="text/tailwindcss">
+      body {
+        @apply font-nunito antialiased;
+      }
+      </style>
   </head>
 
   <body>
@@ -102,33 +128,124 @@
     <!--end header-->
 
     <!-- ***** Our Portfolio Area Start *****  -->
-    <h1>Filter and sort items</h1>
-    <!-- Control buttons -->
-    <div id="myBtnContainer">
-      <button class="btn active" onclick="filterSelection('all')">
-        Show all
-      </button>
-      <button class="btn" onclick="filterSelection('cars')">Cars</button>
-      <button class="btn" onclick="filterSelection('animals')">Animals</button>
-      <button class="btn" onclick="filterSelection('fruits')">Fruits</button>
-      <button class="btn" onclick="filterSelection('colors')">Colors</button>
-    </div>
+    <header class="py-6 bg-indigo-600">
+      <div class="container mx-auto">
+        <h2 class="text-3xl text-center text-white font-bold">
+          Js Product Filter
+        </h2>
+      </div>
+    </header>
+    <div class="container py-4">
+      <div class="grid grid-cols-1 md:grid-cols-12 h-screen">
+        <div
+          id="filters"
+          class="mb-3 bg-white col-span-3 p-6 relative bg-gray-200 shadow-inner block"
+        >
+          <div class="Materials">
+             <legend class="text-base font-medium text-gray-900 my-3">Materials</legend>
+            <select
+              id="Materials"
+              class="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+            >
+              <option value="">-- Materials --</option>
+              <option value="Materials 1">Materials 1</option>
+              <option value="Materials 2">Materials 2</option>
+              <option value="Materials 3">Materials 3</option>
+              <option value="Materials 4">Materials 4</option>
+            </select>
+          </div>
 
-    <!-- The filterable elements. Note that some have multiple class names (this can be used if they belong to multiple categories) -->
-    <div class="container">
-      <div class="filterDiv cars">BMW</div>
-      <div class="filterDiv colors fruits">Orange</div>
-      <div class="filterDiv cars">Volvo</div>
-      <div class="filterDiv colors">Red</div>
-      <div class="filterDiv cars animals">Mustang</div>
-      <div class="filterDiv colors">Blue</div>
-      <div class="filterDiv animals">Cat</div>
-      <div class="filterDiv animals">Dog</div>
-      <div class="filterDiv fruits">Melon</div>
-      <div class="filterDiv fruits animals">Kiwi</div>
-      <div class="filterDiv fruits">Banana</div>
-      <div class="filterDiv fruits">Lemon</div>
-      <div class="filterDiv animals">Cow</div>
+          <div class="size">
+            <legend class="text-base font-medium text-gray-900 my-3">Size</legend>
+            <div id="size">
+              <div class="flex items-start mb-3">
+                  <div class="flex items-center h-5">
+                      <input
+                      type="checkbox"
+                      class="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300 rounded"
+                      value="S"
+                    />
+                  </div>
+                  <div class="ml-3 text-sm">
+                <label class="font-bold text-gray-700">S</label/>
+                 
+                </div>
+              </div>
+              <div class="flex items-start mb-3">
+                  <div class="flex items-center h-5">
+                      <input
+                      type="checkbox"
+                      class="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300 rounded"
+                      value="M"
+                    />
+                  </div>
+                  <div class="ml-3 text-sm">
+                   <label class="font-bold text-gray-700">M</label>
+              
+                  </div>
+              </div>
+              <div class="flex items-start mb-3">
+                  <div class="flex items-center h-5">
+                      <input
+                      type="checkbox"
+                      class="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300 rounded"
+                      value="L"
+                    />
+                  </div>
+                  <div class="ml-3 text-sm">
+              <label class="font-bold text-gray-700"
+
+                >L</label>
+                  </div>
+              </div>
+              <div class="flex items-start mb-3">
+                  <div class="flex items-center h-5">
+                      <input
+                      type="checkbox"
+                      class="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300 rounded"
+                      value="XL"
+                    />
+                  </div>
+                  <div class="ml-3 text-sm">
+              <label class="font-bold text-gray-700"
+                >XL</label>
+                  </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="price">
+              <legend class="text-base font-medium text-gray-900 my-3">Price</legend>
+<div class="flex">
+            <div class="price-input">
+              <input
+                
+                class="mt-1 focus:ring-indigo-500 p-2 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
+                type="text"
+                value=""
+                id="price-min"
+              />
+            </div>
+            <div class="py-2">&nbsp;-&nbsp;</div>
+            <div class="price-input">
+              <input
+                
+                class="mt-1 p-2 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
+                type="text"
+                value=""
+                id="price-max"
+              />
+            </div>
+            <div class="py-2 font-bold">&nbsp;usd&nbsp;</div>
+          </div>
+        </div>
+        </div>
+
+        <div
+          id="goods"
+          class="col-span-9 px-3 relative grid grid-cols-1 lg:grid-cols-4 md:grid-cols-2 gap-2"
+        ></div>
+      </div>
     </div>
     <!-- ***** Our Portfolio Area End *****  -->
 
@@ -232,5 +349,6 @@
     <script src="assets/js/custom.js"></script>
     <!--portfolio js-->
     <script src="./assets/js/active.js"></script>
+    <script src="./assets/js/filter.js"></script>
   </body>
 </html>
