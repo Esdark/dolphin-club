@@ -621,16 +621,6 @@
 
   .navbar-nav {
     padding-top: 25px;
-    .navbar-nav {
-      min-width: 290px;
-      position: relative;
-      left: 0;
-      bottom: 0;
-      padding: 20px 10px;
-      display: block;
-      background-image: none;
-      z-index: 2;
-      background-color: #1d1c1cb2;
   }
 
   .navbar-nav.shop-btn .nav-link {
@@ -1011,6 +1001,7 @@
     font-weight: 700 !important;
   }
   .card {
+    height: 345px;
     border: 0;
   }
 }
