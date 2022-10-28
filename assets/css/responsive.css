@@ -56,6 +56,37 @@
     max-width: 300px;
     margin: 0 auto;
   }
+  .prod-info2 {
+    padding: 10px 10px 15px;
+  }
+  .prod-info2 a:hover {
+    background-color: #4d8470;
+  }
+
+  .prod-info2 a {
+    display: inline-block;
+    background-color: #4d8470;
+    color: #fff;
+    padding: 0px 10px;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 15px;
+  }
+
+  .prod-info2 a:hover {
+    background-color: #4d8470;
+  }
+  .prod-info2 a:hover {
+    background-color: #4d8470;
+  }
+  .product-name {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700 !important;
+  }
+  .card {
+    border: 0;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -91,7 +122,16 @@
   }
 
   .navbar-nav {
-    padding: 25px 0 0;
+    padding-top: 25px;
+    min-width: 290px;
+    position: relative;
+    left: 0;
+    bottom: 0;
+    padding: 20px 10px;
+    display: block;
+    background-image: none;
+    z-index: 2;
+    background-color: #fff;
   }
 
   .navbar-nav.shop-btn {
@@ -256,6 +296,37 @@
   #feat-area .sec-heading {
     text-align: left !important;
   }
+  .prod-info2 {
+    padding: 10px 10px 15px;
+  }
+  .prod-info2 a:hover {
+    background-color: #4d8470;
+  }
+
+  .prod-info2 a {
+    display: inline-block;
+    background-color: #4d8470;
+    color: #fff;
+    padding: 0px 20px;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 10px;
+  }
+
+  .prod-info2 a:hover {
+    background-color: #4d8470;
+  }
+  .prod-info2 a:hover {
+    background-color: #4d8470;
+  }
+  .product-name {
+    text-align: center;
+    font-size: 12px;
+    font-weight: 700 !important;
+  }
+  .card {
+    border: 0;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -299,6 +370,15 @@
 
   .navbar-nav {
     padding-top: 25px;
+    min-width: 290px;
+    position: relative;
+    left: 0;
+    bottom: 0;
+    padding: 20px 10px;
+    display: block;
+    background-image: none;
+    z-index: 2;
+    background-color: #fff;
   }
 
   .navbar-nav.shop-btn .nav-link {
@@ -578,6 +658,37 @@
   .prod-info2 a:hover {
     background-color: #4d8470;
   }
+  .prod-info2 {
+    padding: 0px 0px 0px;
+  }
+  .prod-info2 a:hover {
+    background-color: #4d8470;
+  }
+
+  .prod-info2 a {
+    display: inline-block;
+    background-color: #4d8470;
+    color: #fff;
+    padding: 0px 30px;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 15px;
+  }
+
+  .prod-info2 a:hover {
+    background-color: #4d8470;
+  }
+  .prod-info2 a:hover {
+    background-color: #4d8470;
+  }
+  .product-name {
+    text-align: justify;
+    font-size: 15px;
+    font-weight: 700 !important;
+  }
+  .card {
+    border: 0;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -621,6 +732,15 @@
 
   .navbar-nav {
     padding-top: 25px;
+    min-width: 290px;
+    position: relative;
+    left: 0;
+    bottom: 0;
+    padding: 20px 10px;
+    display: block;
+    background-image: none;
+    z-index: 2;
+    background-color: #fff;
   }
 
   .navbar-nav.shop-btn .nav-link {
@@ -792,7 +912,7 @@
   }
 
   .footer-top {
-    padding: 75px 0;
+    padding: 40px 10px;
   }
 
   .feat-single {
@@ -1047,6 +1167,16 @@
 
   .navbar-nav {
     padding-top: 25px;
+    padding-top: 25px;
+    min-width: 290px;
+    position: relative;
+    left: 0;
+    bottom: 0;
+    padding: 20px 10px;
+    display: block;
+    background-image: none;
+    z-index: 2;
+    background-color: #fff;
   }
 
   .navbar-nav.shop-btn .nav-link {
@@ -1402,5 +1532,36 @@
 
   #faq-area.three {
     padding: 75px 0 65px;
+  }
+  .prod-info2 {
+    padding: 0px 0px 0px;
+  }
+  .prod-info2 a:hover {
+    background-color: #4d8470;
+  }
+
+  .prod-info2 a {
+    display: inline-block;
+    background-color: #4d8470;
+    color: #fff;
+    padding: 0px 30px;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 10px;
+  }
+
+  .prod-info2 a:hover {
+    background-color: #4d8470;
+  }
+  .prod-info2 a:hover {
+    background-color: #4d8470;
+  }
+  .product-name {
+    text-align: center;
+    font-size: 12px;
+    font-weight: 700 !important;
+  }
+  .card {
+    border: 0;
   }
 }
