@@ -50,6 +50,15 @@
   </head>
 
   <body>
+    <!-- ========== Start whatsapp ========== -->
+    <a
+      href="https://api.whatsapp.com/send?phone=51955081075&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20Varela%202."
+      class="float"
+      target="_blank"
+    >
+      <i class="fa fa-whatsapp my-float"></i>
+    </a>
+    <!-- ========== End whatsapp ========== -->
     <!--start header-->
     <header id="header">
       <!--start mainmenu-->
@@ -102,88 +111,349 @@
     <!--end header-->
 
     <!-- ***** Our Portfolio Area Start *****  -->
-    <header class="bg-dark py-5">
+    <header class="bg-gray py-5">
       <div class="container px-4 px-lg-5 my-5">
-        <div class="text-center text-white">
-          <h1 class="display-4 fw-bolder">Shop in style</h1>
+        <div class="text-center">
+          <h1 class="">Shop in Style</h1>
           <p class="lead fw-normal text-white-50 mb-0"></p>
         </div>
       </div>
     </header>
-    <!-- Section-->
+
+    <!-- ***** Our Portfolio Area End *****  -->
+
+    <!-- ========== Start New Product Setion ========== -->
     <div class="container-fluid px-4 px-lg-5 my-5">
-      <div class="row">
-        <div class="col-xs-6 col-md-3">
-          <!--start product single-->
-          <div class="prod-single text-center three border-0">
-            <div class="prod-img">
-              <img
-                src="https://www.okboss.co.in/assets/img/home/boysrow1/kids%20musterd%20jacket%20with%20white%20tshirt%20party%20wear%20dress.jpg"
-                class="img-fluid"
-                alt=""
-              />
+      <div id="content" class="my-5">
+        <div id="filterbar" class="">
+          <div class="box border-bottom">
+            <div class="form-group text-center">
+              <div class="btn-group" data-toggle="buttons">
+                <label class="btn btn-success form-check-label">
+                  <input class="form-check-input" type="radio" /> Reset
+                </label>
+                <label class="btn btn-success form-check-label active">
+                  <input class="form-check-input" type="radio" checked /> Apply
+                </label>
+              </div>
             </div>
-            <div class="prod-info three">
-              <h4>Olimus Blue</h4>
-              <a href="#">See More</a>
+            <div>
+              <label class="tick"
+                >New <input type="checkbox" checked="checked" />
+                <span class="check"></span>
+              </label>
+            </div>
+            <div>
+              <label class="tick"
+                >Sale <input type="checkbox" /> <span class="check"></span>
+              </label>
             </div>
           </div>
-          <!--end product single-->
+          <div class="box border-bottom">
+            <div class="box-label text-uppercase d-flex align-items-center">
+              Materials
+              <button
+                class="btn ml-auto"
+                type="button"
+                data-toggle="collapse"
+                data-target="#inner-box"
+                aria-expanded="false"
+                aria-controls="inner-box"
+                id="out"
+                onclick="outerFilter()"
+              >
+                <span class="fa fa-plus"></span>
+              </button>
+            </div>
+            <div id="inner-box" class="collapse mt-2 mr-1">
+              <div class="my-1">
+                <label class="tick"
+                  >Denim Shirts <input type="checkbox" checked="checked" />
+                  <span class="check"></span>
+                </label>
+              </div>
+              <div class="my-1">
+                <label class="tick"
+                  >Corduroy Shirt <input type="checkbox" />
+                  <span class="check"></span>
+                </label>
+              </div>
+              <div class="my-1">
+                <label class="tick"
+                  >Rfd Shirt <input type="checkbox" />
+                  <span class="check"></span>
+                </label>
+              </div>
+              <div class="my-1">
+                <label class="tick"
+                  >Oxford Shirt <input type="checkbox" />
+                  <span class="check"></span>
+                </label>
+              </div>
+              <div class="my-1">
+                <label class="tick"
+                  >Rayon Printed Shirts <input type="checkbox" />
+                  <span class="check"></span>
+                </label>
+              </div>
+              <div class="my-1">
+                <label class="tick"
+                  >Linen Plain Shirts <input type="checkbox" checked />
+                  <span class="check"></span>
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="box border-bottom">
+            <div class="box-label text-uppercase d-flex align-items-center">
+              Age
+              <button
+                class="btn ml-auto"
+                type="button"
+                data-toggle="collapse"
+                data-target="#inner-box2"
+                aria-expanded="false"
+                aria-controls="inner-box2"
+              >
+                <span class="fa fa-plus"></span>
+              </button>
+            </div>
+            <div id="inner-box2" class="collapse mt-2 mr-1">
+              <div class="my-1">
+                <label class="tick"
+                  >Spring <input type="checkbox" checked="checked" />
+                  <span class="check"></span>
+                </label>
+              </div>
+              <div class="my-1">
+                <label class="tick"
+                  >Summer <input type="checkbox" /> <span class="check"></span>
+                </label>
+              </div>
+              <div class="my-1">
+                <label class="tick"
+                  >Autumn <input type="checkbox" checked />
+                  <span class="check"></span>
+                </label>
+              </div>
+              <div class="my-1">
+                <label class="tick"
+                  >Winter <input type="checkbox" /> <span class="check"></span>
+                </label>
+              </div>
+              <div class="my-1">
+                <label class="tick"
+                  >Rainy <input type="checkbox" /> <span class="check"></span>
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <div class="box">
+            <div class="box-label text-uppercase d-flex align-items-center">
+              size
+              <button
+                class="btn ml-auto"
+                type="button"
+                data-toggle="collapse"
+                data-target="#size"
+                aria-expanded="false"
+                aria-controls="size"
+              >
+                <span class="fa fa-plus"></span>
+              </button>
+            </div>
+            <div id="size" class="collapse">
+              <div
+                class="btn-group d-flex align-items-center flex-wrap"
+                data-toggle="buttons"
+              >
+                <label class="btn btn-success form-check-label">
+                  <input class="form-check-input" type="checkbox" /> 6/12 m
+                </label>
+                <label class="btn btn-success form-check-label">
+                  <input class="form-check-input" type="checkbox" checked />
+                  12/18 m
+                </label>
+                <label class="btn btn-success form-check-label">
+                  <input class="form-check-input" type="checkbox" checked />
+                  18/24 m
+                </label>
+                <label class="btn btn-success form-check-label">
+                  <input class="form-check-input" type="checkbox" checked /> 2/3
+                  y
+                </label>
+                <label class="btn btn-success form-check-label">
+                  <input class="form-check-input" type="checkbox" checked />
+                  3/4 y
+                </label>
+                <label class="btn btn-success form-check-label">
+                  <input class="form-check-input" type="checkbox" checked />
+                  4/5 y
+                </label>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="col-xs-6 col-md-3">
-          <!--start product single-->
-          <div class="prod-single text-center three border-0">
-            <div class="prod-img">
-              <img
-                src="https://www.okboss.co.in/assets/img/home/boysrow1/kids%20musterd%20jacket%20with%20white%20tshirt%20party%20wear%20dress.jpg"
-                class="img-fluid"
-                alt=""
-              />
+        <div id="products">
+          <div class="row mx-0">
+            <div class="col-xs-6 col-md-3 py-2">
+              <div class="card d-flex flex-column align-items-center">
+                <div class="product-name">Torn Jeans for Men</div>
+                <div class="card-img">
+                  <img
+                    src="https://www.okboss.co.in/assets/img/home/boysrow1/kids%20musterd%20jacket%20with%20white%20tshirt%20party%20wear%20dress.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="card-body pt-5">
+                  <div class="d-flex align-items-center price">
+                    <div class="del mr-2">
+                      <span class="text-dark">5500 INR</span>
+                    </div>
+                    <div class="font-weight-bold">4500 INR</div>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="prod-info three">
-              <h4>Olimus Blue</h4>
-              <a href="#">See More</a>
+            <div class="col-xs-6 col-md-3 py-2">
+              <div class="card d-flex flex-column align-items-center">
+                <div class="product-name">Torn Jeans for Men</div>
+                <div class="card-img">
+                  <img
+                    src="https://www.okboss.co.in/assets/img/home/boysrow1/kids%20musterd%20jacket%20with%20white%20tshirt%20party%20wear%20dress.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="card-body pt-5">
+                  <div class="d-flex align-items-center price">
+                    <div class="del mr-2">
+                      <span class="text-dark">5500 INR</span>
+                    </div>
+                    <div class="font-weight-bold">4500 INR</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-6 col-md-3 py-2">
+              <div class="card d-flex flex-column align-items-center">
+                <div class="product-name">Torn Jeans for Men</div>
+                <div class="card-img">
+                  <img
+                    src="https://www.okboss.co.in/assets/img/home/boysrow1/kids%20musterd%20jacket%20with%20white%20tshirt%20party%20wear%20dress.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="card-body pt-5">
+                  <div class="d-flex align-items-center price">
+                    <div class="del mr-2">
+                      <span class="text-dark">5500 INR</span>
+                    </div>
+                    <div class="font-weight-bold">4500 INR</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-6 col-md-3 py-2">
+              <div class="card d-flex flex-column align-items-center">
+                <div class="product-name">Torn Jeans for Men</div>
+                <div class="card-img">
+                  <img
+                    src="https://www.okboss.co.in/assets/img/home/boysrow1/kids%20musterd%20jacket%20with%20white%20tshirt%20party%20wear%20dress.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="card-body pt-5">
+                  <div class="d-flex align-items-center price">
+                    <div class="del mr-2">
+                      <span class="text-dark">5500 INR</span>
+                    </div>
+                    <div class="font-weight-bold">4500 INR</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-6 col-md-3 py-2">
+              <div class="card d-flex flex-column align-items-center">
+                <div class="product-name">Torn Jeans for Men</div>
+                <div class="card-img">
+                  <img
+                    src="https://www.okboss.co.in/assets/img/home/boysrow1/kids%20musterd%20jacket%20with%20white%20tshirt%20party%20wear%20dress.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="card-body pt-5">
+                  <div class="d-flex align-items-center price">
+                    <div class="del mr-2">
+                      <span class="text-dark">5500 INR</span>
+                    </div>
+                    <div class="font-weight-bold">4500 INR</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-6 col-md-3 py-2">
+              <div class="card d-flex flex-column align-items-center">
+                <div class="product-name">Torn Jeans for Men</div>
+                <div class="card-img">
+                  <img
+                    src="https://www.okboss.co.in/assets/img/home/boysrow1/kids%20musterd%20jacket%20with%20white%20tshirt%20party%20wear%20dress.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="card-body pt-5">
+                  <div class="d-flex align-items-center price">
+                    <div class="del mr-2">
+                      <span class="text-dark">5500 INR</span>
+                    </div>
+                    <div class="font-weight-bold">4500 INR</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-6 col-md-3 py-2">
+              <div class="card d-flex flex-column align-items-center">
+                <div class="product-name">Torn Jeans for Men</div>
+                <div class="card-img">
+                  <img
+                    src="https://www.okboss.co.in/assets/img/home/boysrow1/kids%20musterd%20jacket%20with%20white%20tshirt%20party%20wear%20dress.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="card-body pt-5">
+                  <div class="d-flex align-items-center price">
+                    <div class="del mr-2">
+                      <span class="text-dark">5500 INR</span>
+                    </div>
+                    <div class="font-weight-bold">4500 INR</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-6 col-md-3 py-2">
+              <div class="card d-flex flex-column align-items-center">
+                <div class="product-name">Torn Jeans for Men</div>
+                <div class="card-img">
+                  <img
+                    src="https://www.okboss.co.in/assets/img/home/boysrow1/kids%20musterd%20jacket%20with%20white%20tshirt%20party%20wear%20dress.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="card-body pt-5">
+                  <div class="d-flex align-items-center price">
+                    <div class="del mr-2">
+                      <span class="text-dark">5500 INR</span>
+                    </div>
+                    <div class="font-weight-bold">4500 INR</div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-          <!--end product single-->
-        </div>
-        <div class="col-xs-6 col-md-3">
-          <!--start product single-->
-          <div class="prod-single text-center three border-0">
-            <div class="prod-img">
-              <img
-                src="https://www.okboss.co.in/assets/img/home/boysrow1/kids%20musterd%20jacket%20with%20white%20tshirt%20party%20wear%20dress.jpg"
-                class="img-fluid"
-                alt=""
-              />
-            </div>
-            <div class="prod-info three">
-              <h4>Olimus Blue</h4>
-              <a href="#">See More</a>
-            </div>
-          </div>
-          <!--end product single-->
-        </div>
-        <div class="col-xs-6 col-md-3">
-          <!--start product single-->
-          <div class="prod-single text-center three border-0">
-            <div class="prod-img">
-              <img
-                src="https://www.okboss.co.in/assets/img/home/boysrow1/kids%20musterd%20jacket%20with%20white%20tshirt%20party%20wear%20dress.jpg"
-                class="img-fluid"
-                alt=""
-              />
-            </div>
-            <div class="prod-info three">
-              <h4>Olimus Blue</h4>
-              <a href="#">See More</a>
-            </div>
-          </div>
-          <!--end product single-->
         </div>
       </div>
     </div>
-    <!-- ***** Our Portfolio Area End *****  -->
+    <!-- ========== End New Product Setion ========== -->
 
     <!--start footer-->
     <footer id="footer" class="bg-gray">
