@@ -811,9 +811,6 @@ p {
   font-size: 0.8rem;
 }
 
-.navbar {
-  display: inline-flex;
-}
 .pagination .page-item .page-link {
   color: #333;
   border: none;

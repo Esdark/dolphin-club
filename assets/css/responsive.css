@@ -560,6 +560,24 @@
     font-size: 20px;
     line-height: 30px;
   }
+  .prod-info2 a:hover {
+    background-color: #4d8470;
+  }
+
+  .prod-info2 a {
+    display: inline-block;
+    background-color: #4d8470;
+    color: #fff;
+    padding: 0px 15px;
+    border-radius: 4px;
+  }
+
+  .prod-info2 a:hover {
+    background-color: #4d8470;
+  }
+  .prod-info2 a:hover {
+    background-color: #4d8470;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -603,6 +621,16 @@
 
   .navbar-nav {
     padding-top: 25px;
+    .navbar-nav {
+      min-width: 290px;
+      position: relative;
+      left: 0;
+      bottom: 0;
+      padding: 20px 10px;
+      display: block;
+      background-image: none;
+      z-index: 2;
+      background-color: #1d1c1cb2;
   }
 
   .navbar-nav.shop-btn .nav-link {
@@ -953,6 +981,37 @@
 
   #faq-area.three {
     padding: 75px 0 65px;
+  }
+  .prod-info2 {
+    padding: 0px 0px 0px;
+  }
+  .prod-info2 a:hover {
+    background-color: #4d8470;
+  }
+
+  .prod-info2 a {
+    display: inline-block;
+    background-color: #4d8470;
+    color: #fff;
+    padding: 0px 30px;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 15px;
+  }
+
+  .prod-info2 a:hover {
+    background-color: #4d8470;
+  }
+  .prod-info2 a:hover {
+    background-color: #4d8470;
+  }
+  .product-name {
+    text-align: justify;
+    font-size: 10px;
+    font-weight: 700 !important;
+  }
+  .card {
+    border: 0;
   }
 }
 
