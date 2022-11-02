@@ -841,7 +841,8 @@ select {
   width: initial;
 }
 #filterbar {
-  width: 30%;
+  width: 100% !important;
+  position: relative;
   background-color: #fff;
   border: 1px solid #c2c1ca;
   border-radius: 15px;
