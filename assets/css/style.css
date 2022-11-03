@@ -1470,19 +1470,8 @@ input[type="range"]::-webkit-slider-thumb {
 }
 
 
-/*read more button*/
-.btn
-{
-  background: rgb(7,77,108);
-background: -moz-linear-gradient(90deg, rgba(7,77,108,0.7962535355939251) 0%, rgba(0,103,33,0.7374300061821604) 100%);
-background: -webkit-linear-gradient(90deg, rgba(7,77,108,0.7962535355939251) 0%, rgba(0,103,33,0.7374300061821604) 100%);
-background: linear-gradient(90deg, rgba(7,77,108,0.7962535355939251) 0%, rgba(0,103,33,0.7374300061821604) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#074d6c",endColorstr="#006721",GradientType=1);
-border-radius: 10px;
-}
 
 
-/*card*/
 
 
 .product{
