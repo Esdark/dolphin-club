@@ -1584,6 +1584,7 @@ background: -moz-linear-gradient(90deg, rgba(7,77,108,0.7962535355939251) 0%, rg
 background: -webkit-linear-gradient(90deg, rgba(7,77,108,0.7962535355939251) 0%, rgba(0,103,33,0.7374300061821604) 100%);
 background: linear-gradient(90deg, rgba(7,77,108,0.7962535355939251) 0%, rgba(0,103,33,0.7374300061821604) 100%);
 filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#074d6c",endColorstr="#006721",GradientType=1);
+border-radius: 10px;
 }
 
 
@@ -1687,4 +1688,28 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#074d6c",endCo
 }
 .d-table-cell {
   border-radius: 5px;
+}
+
+.getintouch{
+  
+  background-color: #0c2461;
+  border-radius: 30px;
+  color: white;
+  background: rgb(7,77,108);
+background: -moz-linear-gradient(90deg, rgba(7,77,108,0.7962535355939251) 0%, rgba(0,103,33,0.7374300061821604) 100%);
+background: -webkit-linear-gradient(90deg, rgba(7,77,108,0.7962535355939251) 0%, rgba(0,103,33,0.7374300061821604) 100%);
+background: linear-gradient(90deg, rgba(7,77,108,0.7962535355939251) 0%, rgba(0,103,33,0.7374300061821604) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#074d6c",endColorstr="#006721",GradientType=1);
+}
+.col-sm-6{
+  padding: 50px 90px ;
+  
+  
+}
+.col-sm-6 .btn-light{
+ 
+border-radius: 50px;
+    padding: 20px;
+    
+
 }
