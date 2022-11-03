@@ -126,75 +126,40 @@
 
     <!-- ========== Start Flipkart type product ========== -->
     <section>
-      <div class="container">
-        <p>
-          <a
-            class="btn btn-primary"
-            data-toggle="collapse"
-            href="#collapseExample"
-            role="button"
-            aria-expanded="false"
-            aria-controls="collapseExample"
-          >
-            Link with href
-          </a>
-          <button
+      <div class="container px-4 my-5">
+        <div class="row">
+          <div class="col">
+            <button
             class="btn btn-primary"
             type="button"
             data-toggle="collapse"
             data-target="#collapseExample"
             aria-expanded="false"
             aria-controls="collapseExample"
+            id="filter-btn"
           >
-            Button with data-target
+            Filter
           </button>
-        </p>
-        <div class="collapse" id="collapseExample">
-          <div class="card card-body">
-            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus
-            terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer
-            labore wes anderson cred nesciunt sapiente ea proident.
+          
           </div>
+          <div class="col"><button
+            class="btn btn-primary"
+            type="button"
+            data-toggle="collapse"
+            data-target="#collapseExample2"
+            aria-expanded="false"
+            aria-controls="collapseExample2"
+            id="sort-btn"
+          >
+            Sort
+          </button></div>
         </div>
-      </div>
-      <div class="container-fluid px-4 my-5">
-        <div class="row">
-          <div class="col">
-            <div
-              class="bg-white rounded d-flex flex-row mb-3 align-items-center"
-              id="header"
-            >
-              <button
-                class="btn btn-hide text-uppercase"
-                type="button"
-                data-toggle="collapse"
-                data-target="#filterbar"
-                aria-expanded="false"
-                aria-controls="filterbar"
-                id="filter-btn"
-                onclick="changeBtnTxt()"
-              >
-                <span id="btn-txt">Filters</span>
-              </button>
-
-              <div id="content" class="my-5 px-4">
-                <div id="filterbar" class="collapse">
-                  <div class="box">
-                    <div class="box">
-                      <div
+        <div class="collapse" id="collapseExample">
+          <div
                         class="box-label text-uppercase d-flex align-items-center"
                       >
-                        Materials
-                        <button
-                          class="btn ml-auto"
-                          type="button"
-                          data-toggle="collapse"
-                          data-target="#inner-box"
-                          aria-expanded="false"
-                          aria-controls="inner-box"
-                          id="out"
-                          onclick="outerFilter()"
-                        ></button>
+                        MATERIALS
+                        
                       </div>
                       <div id="inner-box" class="mt-2 mr-1">
                         <div class="my-1">
@@ -236,112 +201,59 @@
                           </label>
                         </div>
                       </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div
-              class="bg-white rounded d-flex flex-row mb-5 align-items-center"
-              id="header"
-            >
-              <button
-                class="btn btn-hide text-uppercase"
-                type="button"
-                data-toggle="collapse"
-                data-target="#sortbar"
-                aria-expanded="false"
-                aria-controls="sortbar"
-                id="sort-btn"
-                onclick="changeBtnTxt()"
-              >
-                <span id="btn-txt">sort</span>
-              </button>
-
-              <div id="content" class="my-5 px-4">
-                <div id="sortbar" class="collapse">
-                  <div class="box">
-                    <div class="box">
-                      <div
+        </div>
+        <div class="collapse" id="collapseExample2">
+          <div
                         class="box-label text-uppercase d-flex align-items-center"
                       >
-                        Outerwear
-                        <button
-                          class="btn ml-auto"
-                          type="button"
-                          data-toggle="collapse"
-                          data-target="#inner-box"
-                          aria-expanded="false"
-                          aria-controls="inner-box"
-                          id="out"
-                          onclick="outerFilter()"
-                        ></button>
+                        AGE
+                        
                       </div>
                       <div id="inner-box" class="mt-2 mr-1">
                         <div class="my-1">
                           <label class="tick"
-                            >Windbreaker
+                            >Denim Shirts
                             <input type="checkbox" checked="checked" />
                             <span class="check"></span>
                           </label>
                         </div>
                         <div class="my-1">
                           <label class="tick"
-                            >Jumpsuit <input type="checkbox" />
+                            >Corduroy Shirt <input type="checkbox" />
                             <span class="check"></span>
                           </label>
                         </div>
                         <div class="my-1">
                           <label class="tick"
-                            >Jacket <input type="checkbox" />
+                            >Rfd Shirt <input type="checkbox" />
                             <span class="check"></span>
                           </label>
                         </div>
                         <div class="my-1">
                           <label class="tick"
-                            >Coat <input type="checkbox" />
+                            >Oxford Shirt <input type="checkbox" />
                             <span class="check"></span>
                           </label>
                         </div>
                         <div class="my-1">
                           <label class="tick"
-                            >Raincoat <input type="checkbox" />
+                            >rRayon Printed Shirts <input type="checkbox" />
                             <span class="check"></span>
                           </label>
                         </div>
                         <div class="my-1">
                           <label class="tick"
-                            >Handbag <input type="checkbox" checked />
-                            <span class="check"></span>
-                          </label>
-                        </div>
-                        <div class="my-1">
-                          <label class="tick"
-                            >Warm vest <input type="checkbox" />
-                            <span class="check"></span>
-                          </label>
-                        </div>
-                        <div class="my-1">
-                          <label class="tick"
-                            >Wallets <input type="checkbox" checked />
+                            >Linen Plain Shirts
+                            <input type="checkbox" checked />
                             <span class="check"></span>
                           </label>
                         </div>
                       </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
     </section>
     <section>
       <div class="container-fluid">
-        <div class="row">
+        <div class="row px-1 py-1 ">
           <!-- ========== Start single product ========== -->
           <div class="col-lg-3 col-6 col-xs-6 col-md-3 py-2">
             <div class="card d-flex flex-column align-items-center">
