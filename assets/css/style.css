@@ -922,6 +922,12 @@ select {
   background-color: #4d8470;
   color: #fff;
 }
+#filter-btn {
+  width: 100% !important;
+}
+#sort-btn {
+  width: 100% !important;
+}
 #sortbar {
   width: 150% !important;
   position: relative;
@@ -1070,7 +1076,7 @@ label {
   padding: 10px;
   cursor: pointer;
   transition: 0.3s all ease-in-out;
-  height: 350px;
+  height: 800px;
 }
 .card:hover {
   box-shadow: 2px 2px 15px #4d8470;
@@ -1087,8 +1093,8 @@ label {
 }
 .card-img img {
   padding-top: 10px;
-  width: inherit;
-  height: 180px;
+  width: 100%;
+  height: auto;
   object-fit: contain;
   display: block;
 }
@@ -1261,14 +1267,14 @@ input[type="range"]::-webkit-slider-thumb {
 }
 @media (max-width: 525.5px) {
   #filterbar {
-    float: none;
-    width: 100%;
+    float: LEFT;
+    width: 110% !important;
     margin-bottom: 20px;
     border-radius: 5px;
   }
   #sortbar {
-    float: none;
-    width: 100%;
+    float: left;
+    width: 110% !important;
     margin-bottom: 20px;
     border-radius: 5px;
   }
