@@ -1575,53 +1575,44 @@ input[type="range"]::-webkit-slider-thumb {
   color: #4d8470;
 }
 
+
 /*read more button*/
-.btn {
-  background: rgb(7, 77, 108);
-  background: -moz-linear-gradient(
-    90deg,
-    rgba(7, 77, 108, 0.7962535355939251) 0%,
-    rgba(0, 103, 33, 0.7374300061821604) 100%
-  );
-  background: -webkit-linear-gradient(
-    90deg,
-    rgba(7, 77, 108, 0.7962535355939251) 0%,
-    rgba(0, 103, 33, 0.7374300061821604) 100%
-  );
-  background: linear-gradient(
-    90deg,
-    rgba(7, 77, 108, 0.7962535355939251) 0%,
-    rgba(0, 103, 33, 0.7374300061821604) 100%
-  );
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#074d6c",endColorstr="#006721",GradientType=1);
+.btn
+{
+  background: rgb(7,77,108);
+background: -moz-linear-gradient(90deg, rgba(7,77,108,0.7962535355939251) 0%, rgba(0,103,33,0.7374300061821604) 100%);
+background: -webkit-linear-gradient(90deg, rgba(7,77,108,0.7962535355939251) 0%, rgba(0,103,33,0.7374300061821604) 100%);
+background: linear-gradient(90deg, rgba(7,77,108,0.7962535355939251) 0%, rgba(0,103,33,0.7374300061821604) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#074d6c",endColorstr="#006721",GradientType=1);
 }
+
 
 /*card*/
 
 /*----  Main Style  ----*/
-#cards_landscape_wrap-2 {
+#cards_landscape_wrap-2{
   text-align: center;
   background: #ffffff;
 }
-#cards_landscape_wrap-2 .container {
-  padding-top: 40px;
+#cards_landscape_wrap-2 .container{
+  padding-top: 40px; 
   padding-bottom: 100px;
 }
-#cards_landscape_wrap-2 a {
+#cards_landscape_wrap-2 a{
   text-decoration: none;
   outline: none;
 }
 #cards_landscape_wrap-2 .card-flyer {
   border-radius: 5px;
 }
-#cards_landscape_wrap-2 .card-flyer .image-box {
+#cards_landscape_wrap-2 .card-flyer .image-box{
   background: #ffffff;
   overflow: hidden;
-  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.50);
   border-radius: 5px;
 }
-#cards_landscape_wrap-2 .card-flyer .image-box img {
-  /*
+#cards_landscape_wrap-2 .card-flyer .image-box img{
+ /*
   -webkit-transition:all .9s ease; 
   -moz-transition:all .9s ease; 
   -o-transition:all .9s ease;
@@ -1630,7 +1621,7 @@ input[type="range"]::-webkit-slider-thumb {
   width: 100%;
   height: 400px;
 }
-#cards_landscape_wrap-2 .card-flyer:hover .image-box img {
+#cards_landscape_wrap-2 .card-flyer:hover .image-box img{
   /*
   opacity: 0.7;
   -webkit-transform:scale(1.15);
@@ -1640,14 +1631,14 @@ input[type="range"]::-webkit-slider-thumb {
   transform:scale(1.15);
   */
 }
-#cards_landscape_wrap-2 .card-flyer .text-box {
+#cards_landscape_wrap-2 .card-flyer .text-box{
   text-align: center;
 }
-#cards_landscape_wrap-2 .card-flyer .text-box .text-container {
+#cards_landscape_wrap-2 .card-flyer .text-box .text-container{
   padding: 30px 18px;
 }
-#cards_landscape_wrap-2 .card-flyer {
-  background: #ffffff;
+#cards_landscape_wrap-2 .card-flyer{
+  background: #FFFFFF;
   margin-top: 50px;
   /*
   -webkit-transition: all 0.2s ease-in;
@@ -1658,7 +1649,7 @@ input[type="range"]::-webkit-slider-thumb {
   box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.40);
   */
 }
-#cards_landscape_wrap-2 .card-flyer:hover {
+#cards_landscape_wrap-2 .card-flyer:hover{
   background: #fff;
   /*
   box-shadow: 0px 15px 26px rgba(0, 0, 0, 0.50);
@@ -1670,25 +1661,25 @@ input[type="range"]::-webkit-slider-thumb {
   */
   margin-top: 50px;
 }
-#cards_landscape_wrap-2 .card-flyer .text-box p {
+#cards_landscape_wrap-2 .card-flyer .text-box p{
   margin-top: 10px;
   margin-bottom: 0px;
-  padding-bottom: 0px;
+  padding-bottom: 0px; 
   font-size: 14px;
   letter-spacing: 1px;
   color: #000000;
 }
-#cards_landscape_wrap-2 .card-flyer .text-box h6 {
+#cards_landscape_wrap-2 .card-flyer .text-box h6{
   margin-top: 0px;
-  margin-bottom: 4px;
+  margin-bottom: 4px; 
   font-size: 18px;
   font-weight: bold;
   text-transform: uppercase;
-  font-family: "Roboto Black", sans-serif;
+  font-family: 'Roboto Black', sans-serif;
   letter-spacing: 1px;
   color: #00acc1;
 }
-.product {
+.product{
   padding-bottom: 5px;
   font-size: 12px;
   text-align: left;
