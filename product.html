@@ -125,107 +125,82 @@
     <!-- ***** Our Portfolio Area End *****  -->
 
     <!-- ========== Start Flipkart type product ========== -->
-
-    <div class="container-fluid px-4 px-lg-5 my-5">
-      <div
-        class="bg-white rounded d-flex align-items-center justify-content-between"
-        id="header"
-      >
-        <button
-          class="btn btn-hide text-uppercase"
-          type="button"
-          data-toggle="collapse"
-          data-target="#filterbar"
-          aria-expanded="false"
-          aria-controls="filterbar"
-          id="filter-btn"
-          onclick="changeBtnTxt()"
+    <section>
+      <div class="container-fluid px-4 my-5">
+        <div
+          class="bg-white rounded d-flex flex-column mb-3 align-items-center"
+          id="header"
         >
-          <span class="fa fa-angle-left" id="filter-angle"></span>
-          <span id="btn-txt">Filters</span>
-        </button>
-        <nav class="navbar navbar-expand-lg navbar-light pl-lg-0 pl-auto">
           <button
-            class="navbar-toggler"
+            class="btn btn-hide text-uppercase"
             type="button"
             data-toggle="collapse"
-            data-target="#mynav"
-            aria-controls="mynav"
+            data-target="#filterbar"
             aria-expanded="false"
-            aria-label="Toggle navigation"
-            onclick="chnageIcon()"
-            id="icon"
+            aria-controls="filterbar"
+            id="filter-btn"
+            onclick="changeBtnTxt()"
           >
-            <span class="navbar-toggler-icon"></span>
+            <span id="btn-txt">Filters</span>
           </button>
-        </nav>
-        <div id="content" class="my-5">
-          <div id="filterbar" class="collapse">
-            <div class="box border-bottom">
-              <div class="box border-bottom">
-                <div class="box-label text-uppercase d-flex align-items-center">
-                  Outerwear
-                  <button
-                    class="btn ml-auto"
-                    type="button"
-                    data-toggle="collapse"
-                    data-target="#inner-box"
-                    aria-expanded="false"
-                    aria-controls="inner-box"
-                    id="out"
-                    onclick="outerFilter()"
+
+          <div id="content" class="my-5 px-4">
+            <div id="filterbar" class="collapse">
+              <div class="box">
+                <div class="box">
+                  <div
+                    class="box-label text-uppercase d-flex align-items-center"
                   >
-                    <span class="fa fa-plus"></span>
-                  </button>
-                </div>
-                <div id="inner-box" class="collapse mt-2 mr-1">
-                  <div class="my-1">
-                    <label class="tick"
-                      >Windbreaker <input type="checkbox" checked="checked" />
-                      <span class="check"></span>
-                    </label>
+                    Materials
+                    <button
+                      class="btn ml-auto"
+                      type="button"
+                      data-toggle="collapse"
+                      data-target="#inner-box"
+                      aria-expanded="false"
+                      aria-controls="inner-box"
+                      id="out"
+                      onclick="outerFilter()"
+                    ></button>
                   </div>
-                  <div class="my-1">
-                    <label class="tick"
-                      >Jumpsuit <input type="checkbox" />
-                      <span class="check"></span>
-                    </label>
-                  </div>
-                  <div class="my-1">
-                    <label class="tick"
-                      >Jacket <input type="checkbox" />
-                      <span class="check"></span>
-                    </label>
-                  </div>
-                  <div class="my-1">
-                    <label class="tick"
-                      >Coat <input type="checkbox" />
-                      <span class="check"></span>
-                    </label>
-                  </div>
-                  <div class="my-1">
-                    <label class="tick"
-                      >Raincoat <input type="checkbox" />
-                      <span class="check"></span>
-                    </label>
-                  </div>
-                  <div class="my-1">
-                    <label class="tick"
-                      >Handbag <input type="checkbox" checked />
-                      <span class="check"></span>
-                    </label>
-                  </div>
-                  <div class="my-1">
-                    <label class="tick"
-                      >Warm vest <input type="checkbox" />
-                      <span class="check"></span>
-                    </label>
-                  </div>
-                  <div class="my-1">
-                    <label class="tick"
-                      >Wallets <input type="checkbox" checked />
-                      <span class="check"></span>
-                    </label>
+                  <div id="inner-box" class="mt-2 mr-1">
+                    <div class="my-1">
+                      <label class="tick"
+                        >Denim Shirts
+                        <input type="checkbox" checked="checked" />
+                        <span class="check"></span>
+                      </label>
+                    </div>
+                    <div class="my-1">
+                      <label class="tick"
+                        >Corduroy Shirt <input type="checkbox" />
+                        <span class="check"></span>
+                      </label>
+                    </div>
+                    <div class="my-1">
+                      <label class="tick"
+                        >Rfd Shirt <input type="checkbox" />
+                        <span class="check"></span>
+                      </label>
+                    </div>
+                    <div class="my-1">
+                      <label class="tick"
+                        >Oxford Shirt <input type="checkbox" />
+                        <span class="check"></span>
+                      </label>
+                    </div>
+                    <div class="my-1">
+                      <label class="tick"
+                        >rRayon Printed Shirts <input type="checkbox" />
+                        <span class="check"></span>
+                      </label>
+                    </div>
+                    <div class="my-1">
+                      <label class="tick"
+                        >Linen Plain Shirts <input type="checkbox" checked />
+                        <span class="check"></span>
+                      </label>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -233,26 +208,269 @@
           </div>
         </div>
       </div>
-    </div>
+    </section>
+    <section>
+      <div class="container-fluid px-4">
+        <div
+          class="bg-white rounded d-flex flex-column mb-3 align-items-center"
+          id="header"
+        >
+          <button
+            class="btn btn-hide text-uppercase"
+            type="button"
+            data-toggle="collapse"
+            data-target="#sortbar"
+            aria-expanded="false"
+            aria-controls="sortbar"
+            id="sort-btn"
+            onclick="changeBtnTxt()"
+          >
+            <span id="btn-txt">sort</span>
+          </button>
 
-    <div class="col-lg-3 col-6 col-xs-6 col-md-3 py-2">
-      <div class="card d-flex flex-column align-items-center">
-        <div class="product-name">Torn Jeans for Men</div>
-        <div class="card-img">
-          <img
-            src="https://www.okboss.co.in/assets/img/home/boysrow1/kids%20musterd%20jacket%20with%20white%20tshirt%20party%20wear%20dress.jpg"
-            alt=""
-          />
-        </div>
-        <div class="card-body pt-5">
-          <div class="d-flex align-items-center price">
-            <div class="prod-info2 three">
-              <a href="mainitem.html">See More</a>
+          <div id="content" class="my-5 px-4">
+            <div id="sortbar" class="collapse">
+              <div class="box">
+                <div class="box">
+                  <div
+                    class="box-label text-uppercase d-flex align-items-center"
+                  >
+                    Outerwear
+                    <button
+                      class="btn ml-auto"
+                      type="button"
+                      data-toggle="collapse"
+                      data-target="#inner-box"
+                      aria-expanded="false"
+                      aria-controls="inner-box"
+                      id="out"
+                      onclick="outerFilter()"
+                    ></button>
+                  </div>
+                  <div id="inner-box" class="mt-2 mr-1">
+                    <div class="my-1">
+                      <label class="tick"
+                        >Windbreaker <input type="checkbox" checked="checked" />
+                        <span class="check"></span>
+                      </label>
+                    </div>
+                    <div class="my-1">
+                      <label class="tick"
+                        >Jumpsuit <input type="checkbox" />
+                        <span class="check"></span>
+                      </label>
+                    </div>
+                    <div class="my-1">
+                      <label class="tick"
+                        >Jacket <input type="checkbox" />
+                        <span class="check"></span>
+                      </label>
+                    </div>
+                    <div class="my-1">
+                      <label class="tick"
+                        >Coat <input type="checkbox" />
+                        <span class="check"></span>
+                      </label>
+                    </div>
+                    <div class="my-1">
+                      <label class="tick"
+                        >Raincoat <input type="checkbox" />
+                        <span class="check"></span>
+                      </label>
+                    </div>
+                    <div class="my-1">
+                      <label class="tick"
+                        >Handbag <input type="checkbox" checked />
+                        <span class="check"></span>
+                      </label>
+                    </div>
+                    <div class="my-1">
+                      <label class="tick"
+                        >Warm vest <input type="checkbox" />
+                        <span class="check"></span>
+                      </label>
+                    </div>
+                    <div class="my-1">
+                      <label class="tick"
+                        >Wallets <input type="checkbox" checked />
+                        <span class="check"></span>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </section>
+    <section>
+      <div class="container-fluid">
+        <div class="row">
+          <!-- ========== Start single product ========== -->
+          <div class="col-lg-3 col-6 col-xs-6 col-md-3 py-2">
+            <div class="card d-flex flex-column align-items-center">
+              <div class="product-name">Torn Jeans for Men</div>
+              <div class="card-img">
+                <img
+                  src="https://www.okboss.co.in/assets/img/home/boysrow1/kids%20musterd%20jacket%20with%20white%20tshirt%20party%20wear%20dress.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="card-body pt-5">
+                <div class="d-flex align-items-center price">
+                  <div class="prod-info2 three">
+                    <a href="mainitem.html">See More</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- ========== End single product ========== -->
+          <!-- ========== Start single product ========== -->
+          <div class="col-lg-3 col-6 col-xs-6 col-md-3 py-2">
+            <div class="card d-flex flex-column align-items-center">
+              <div class="product-name">Torn Jeans for Men</div>
+              <div class="card-img">
+                <img
+                  src="https://www.okboss.co.in/assets/img/home/boysrow1/kids%20musterd%20jacket%20with%20white%20tshirt%20party%20wear%20dress.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="card-body pt-5">
+                <div class="d-flex align-items-center price">
+                  <div class="prod-info2 three">
+                    <a href="mainitem.html">See More</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- ========== End single product ========== -->
+          <!-- ========== Start single product ========== -->
+          <div class="col-lg-3 col-6 col-xs-6 col-md-3 py-2">
+            <div class="card d-flex flex-column align-items-center">
+              <div class="product-name">Torn Jeans for Men</div>
+              <div class="card-img">
+                <img
+                  src="https://www.okboss.co.in/assets/img/home/boysrow1/kids%20musterd%20jacket%20with%20white%20tshirt%20party%20wear%20dress.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="card-body pt-5">
+                <div class="d-flex align-items-center price">
+                  <div class="prod-info2 three">
+                    <a href="mainitem.html">See More</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- ========== End single product ========== -->
+          <!-- ========== Start single product ========== -->
+          <div class="col-lg-3 col-6 col-xs-6 col-md-3 py-2">
+            <div class="card d-flex flex-column align-items-center">
+              <div class="product-name">Torn Jeans for Men</div>
+              <div class="card-img">
+                <img
+                  src="https://www.okboss.co.in/assets/img/home/boysrow1/kids%20musterd%20jacket%20with%20white%20tshirt%20party%20wear%20dress.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="card-body pt-5">
+                <div class="d-flex align-items-center price">
+                  <div class="prod-info2 three">
+                    <a href="mainitem.html">See More</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- ========== End single product ========== -->
+          <!-- ========== Start single product ========== -->
+          <div class="col-lg-3 col-6 col-xs-6 col-md-3 py-2">
+            <div class="card d-flex flex-column align-items-center">
+              <div class="product-name">Torn Jeans for Men</div>
+              <div class="card-img">
+                <img
+                  src="https://www.okboss.co.in/assets/img/home/boysrow1/kids%20musterd%20jacket%20with%20white%20tshirt%20party%20wear%20dress.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="card-body pt-5">
+                <div class="d-flex align-items-center price">
+                  <div class="prod-info2 three">
+                    <a href="mainitem.html">See More</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- ========== End single product ========== -->
+          <!-- ========== Start single product ========== -->
+          <div class="col-lg-3 col-6 col-xs-6 col-md-3 py-2">
+            <div class="card d-flex flex-column align-items-center">
+              <div class="product-name">Torn Jeans for Men</div>
+              <div class="card-img">
+                <img
+                  src="https://www.okboss.co.in/assets/img/home/boysrow1/kids%20musterd%20jacket%20with%20white%20tshirt%20party%20wear%20dress.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="card-body pt-5">
+                <div class="d-flex align-items-center price">
+                  <div class="prod-info2 three">
+                    <a href="mainitem.html">See More</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- ========== End single product ========== -->
+          <!-- ========== Start single product ========== -->
+          <div class="col-lg-3 col-6 col-xs-6 col-md-3 py-2">
+            <div class="card d-flex flex-column align-items-center">
+              <div class="product-name">Torn Jeans for Men</div>
+              <div class="card-img">
+                <img
+                  src="https://www.okboss.co.in/assets/img/home/boysrow1/kids%20musterd%20jacket%20with%20white%20tshirt%20party%20wear%20dress.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="card-body pt-5">
+                <div class="d-flex align-items-center price">
+                  <div class="prod-info2 three">
+                    <a href="mainitem.html">See More</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- ========== End single product ========== -->
+          <!-- ========== Start single product ========== -->
+          <div class="col-lg-3 col-6 col-xs-6 col-md-3 py-2">
+            <div class="card d-flex flex-column align-items-center">
+              <div class="product-name">Torn Jeans for Men</div>
+              <div class="card-img">
+                <img
+                  src="https://www.okboss.co.in/assets/img/home/boysrow1/kids%20musterd%20jacket%20with%20white%20tshirt%20party%20wear%20dress.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="card-body pt-5">
+                <div class="d-flex align-items-center price">
+                  <div class="prod-info2 three">
+                    <a href="mainitem.html">See More</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- ========== End single product ========== -->
+        </div>
+      </div>
+    </section>
+
     <!-- ========== End Flipkart type product ========== -->
 
     <!--start footer-->
