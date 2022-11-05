@@ -92,6 +92,30 @@
     transition: 0.3s all ease-in-out;
     height: 550px;
   }
+  .cardb {
+    height: 500px;
+    padding: 15px;
+  }
+  .cardb img {
+    width: 100%;
+    border-radius: 30px;
+  }
+
+  .btn-circle {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    padding: 6px 0;
+    font-size: 10px;
+    line-height: 1.428571429;
+    border-radius: 15px;
+    border: none;
+    background-color: #fff;
+    color: #000;
+    position: relative;
+    bottom: 50px;
+    left: 100px;
+  }
 }
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
   .caption h1 {
