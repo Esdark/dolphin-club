@@ -1911,3 +1911,7 @@ ul.CTAs a {
   color: #fff;
   padding: 5px;
 }
+
+.img-fluid {
+  border-radius: 0px;
+}
