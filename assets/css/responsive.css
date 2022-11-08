@@ -959,6 +959,8 @@
     cursor: pointer;
     transition: 0.3s all ease-in-out;
     height: 400px;
+    border-right: 1px solid #ececec94;
+    border-bottom: 1px solid #ececec94;
   }
   .mobtn {
     width: 100%;
