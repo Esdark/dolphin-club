@@ -1047,8 +1047,7 @@ label {
 }
 #inner-box,
 #inner-box2 {
-  height: 150px;
-  overflow-y: scroll;
+  height: 250px;
 }
 #inner-box2 {
   height: 132px;
@@ -1788,7 +1787,8 @@ input[type="range"]::-webkit-slider-thumb {
 
 #sidebar ul.components {
   padding: 20px 0;
-  border-bottom: 1px solid #ffffff;
+  border-bottom: 1px solid #ececec94;
+  margin-left: 35px;
 }
 
 #sidebar ul p {
