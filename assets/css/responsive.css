@@ -511,6 +511,39 @@
     text-align: center;
     font-size: 25px !important;
   }
+  .cardp-img img {
+    padding-top: 0px !important;
+    width: 100%;
+    object-fit: contain;
+    display: flex;
+  }
+  .cardp {
+    padding: 10px;
+    cursor: pointer;
+    transition: 0.3s all ease-in-out;
+    height: 400px;
+  }
+  .mobtn {
+    width: 100%;
+    display: flex;
+    position: relative;
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+    top: 10px;
+  }
+  .btnm {
+    background-color: #fff;
+    border: 0px;
+    width: 100%;
+    padding-top: 30px;
+  }
+  .btnm i {
+    margin-left: 120px;
+  }
+  #sidebar {
+    display: none;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -725,7 +758,7 @@
   }
 
   .footer-top {
-    padding: 90px 0;
+    padding: 90px 10px;
   }
 
   .feat-single {
@@ -914,6 +947,36 @@
     text-align: center;
     border-radius: 20px;
     margin-left: 120px;
+  }
+  .cardp-img img {
+    padding-top: 0px !important;
+    width: 100%;
+    object-fit: contain;
+    display: flex;
+  }
+  .cardp {
+    padding: 10px;
+    cursor: pointer;
+    transition: 0.3s all ease-in-out;
+    height: 400px;
+  }
+  .mobtn {
+    width: 100%;
+    display: flex;
+    position: relative;
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+    top: 10px;
+  }
+  .btnm {
+    background-color: #fff;
+    border: 0px;
+    width: 100%;
+    padding-top: 30px;
+  }
+  .btnm i {
+    margin-left: 35px;
   }
 }
 
@@ -1391,6 +1454,39 @@
     border-radius: 20px;
     margin-left: 70px;
   }
+  .cardp-img img {
+    padding-top: 0px !important;
+    width: 100%;
+    object-fit: contain;
+    display: flex;
+  }
+  .cardp {
+    padding: 10px;
+    cursor: pointer;
+    transition: 0.3s all ease-in-out;
+    height: 400px;
+  }
+  .cardp .product-name {
+    font-weight: 600;
+    font-size: 14px;
+  }
+  .mobtn {
+    width: 100%;
+    display: flex;
+    position: relative;
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+    top: 10px;
+  }
+  .btnm {
+    background-color: #fff;
+    border: 0px;
+    width: 100%;
+    padding-top: 30px;
+  }
+  .btnm i {
+  }
 }
 
 /*--------------------------------------------------------------
@@ -1619,7 +1715,7 @@
   }
 
   .footer-top {
-    padding: 75px 0;
+    padding: 75px 10px;
   }
 
   .feat-single {
@@ -1871,5 +1967,33 @@
     text-align: center;
     border-radius: 20px;
     margin-left: 35px;
+  }
+  .cardp-img img {
+    padding-top: 0px !important;
+    width: 100%;
+    object-fit: contain;
+    display: flex;
+  }
+  .cardp {
+    padding: 10px;
+    cursor: pointer;
+    transition: 0.3s all ease-in-out;
+    height: 250px;
+  }
+  .mobtn {
+    width: 100%;
+    display: flex;
+    position: relative;
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+    top: 10px;
+  }
+  .btnm {
+    background-color: #fff;
+    border: 0px;
+    width: 100%;
+  }
+  .btnm i {
   }
 }

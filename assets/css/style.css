@@ -1099,7 +1099,7 @@ label {
   margin-left: 0px;
 }
 .cardp {
-  padding: 10px;
+  padding: 90px;
   cursor: pointer;
   transition: 0.3s all ease-in-out;
   height: 400px;
@@ -1146,6 +1146,9 @@ label {
   width: 100%;
   object-fit: contain;
   display: flex;
+}
+.mobtn {
+  display: none;
 }
 .cardp-body .btn-group .btn {
   padding: 0;
