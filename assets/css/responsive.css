@@ -522,6 +522,7 @@
     cursor: pointer;
     transition: 0.3s all ease-in-out;
     height: 400px;
+    border: 1px solid #ececec94;
   }
   .mobtn {
     width: 100%;
@@ -945,8 +946,11 @@
     border: 0;
   }
   .cardb {
-    height: 500px;
+    height: 550px;
     padding: 15px;
+  }
+  .why-choose-img img {
+    display: none;
   }
   .cardb img {
     width: 100%;
@@ -996,8 +1000,7 @@
     cursor: pointer;
     transition: 0.3s all ease-in-out;
     height: 400px;
-    border-right: 1px solid #ececec94;
-    border-bottom: 1px solid #ececec94;
+    border: 1px solid #ececec94;
   }
   .mobtn {
     width: 100%;
@@ -1053,6 +1056,22 @@
   .menuemob.sticky {
     border-bottom: 1px solid #ececec94 !important;
     position: relative;
+  }
+  .cardl {
+    height: 400px;
+    width: 300px;
+    background-color: #fff;
+    margin-left: 70px;
+  }
+  .cardl-image {
+    width: 300px;
+    height: 200px;
+  }
+  .cardl-image img {
+    position: relative;
+    width: 300px;
+    height: 200px;
+    border-radius: 20px;
   }
 }
 
@@ -1490,8 +1509,11 @@
     border: 0;
   }
   .cardb {
-    height: 500px;
+    height: 400px;
     padding: 15px;
+  }
+  .why-choose-img img {
+    display: none;
   }
   .cardb img {
     width: 100%;
@@ -1541,6 +1563,7 @@
     cursor: pointer;
     transition: 0.3s all ease-in-out;
     height: 400px;
+    border: 1px solid #ececec94;
   }
   .cardp .product-name {
     font-weight: 600;
@@ -1597,6 +1620,22 @@
   .menuemob.sticky {
     border-bottom: 1px solid #ececec94 !important;
     position: relative;
+  }
+  .cardl {
+    height: 400px;
+    width: 300px;
+    background-color: #fff;
+    margin-left: 15px;
+  }
+  .cardl-image {
+    width: 300px;
+    height: 200px;
+  }
+  .cardl-image img {
+    position: relative;
+    width: 300px;
+    height: 200px;
+    border-radius: 20px;
   }
 }
 
@@ -2039,7 +2078,7 @@
     border: 0;
   }
   .cardb {
-    height: 500px;
+    height: 300px;
     padding: 15px;
   }
   .cardb img {
@@ -2147,5 +2186,8 @@
   .menuemob.sticky {
     border-bottom: 1px solid #ececec94 !important;
     position: relative;
+  }
+  .why-choose-img img {
+    display: none;
   }
 }
