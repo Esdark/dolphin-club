@@ -1,0 +1,109 @@
+{% extends 'base.html' %}{% load static %}
+{% block pagecontent %}
+    
+
+<section id="contact-area" data-scroll-index="5">
+    <div class="container">
+      <div class="row">
+        <!--start heading-->
+        <div class="col-lg-8">
+          <div class="sec-heading">
+            <h6>Need Help</h6>
+            <h2>Connect with us</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic
+              explicabo voluptas nisi iste reiciendis, tempore commodi
+              necessitatibus, laborum laudantium in.
+            </p>
+          </div>
+        </div>
+        <!--end heading-->
+      </div>
+      <div class="row">
+        <!--start contact form-->
+        <div class="col-lg-8 col-md-7">
+          <div class="contact-form">
+            <form id="id_contact_form" action="" method="post">
+              <div class="form-group">
+                <label for="name">Name*</label>
+                <input type="text" name="name" class="form-control" required="required" data-error="name is required."/>
+                <div class="help-block with-errors"></div>
+              </div>
+              <div class="form-group">
+                <label for="email">Email*</label>
+                <input  type="email" id="email" name="email" required="required" class="form-control"/>
+                <div class="help-block with-errors"></div>
+              </div>
+              <div class="form-group">
+                <label for="message">Message*</label>
+                <textarea class="form-control" id="message"  name="message" rows="8" placeholder="Write your message*"  required="required" data-error="Please, leave us a message."></textarea>
+                <div class="help-block with-errors"></div>
+              </div>
+              <button id="id_send_contact_form">Submit Now</button>
+              <div class="messages"></div>
+            </form>
+          </div>
+        </div>
+        <!--end contact form-->
+        <!--start contact information-->
+        <div class="col-lg-4 col-md-5">
+          <div class="cont-info">
+            <div class="cont-info-single">
+              <h5><i class="icofont-google-map"></i> Address:</h5>
+              <p>
+                Maount View, Oval Road <br />
+                New York, USA
+              </p>
+            </div>
+            <div class="cont-info-single">
+              <h5><i class="icofont-email"></i> Email:</h5>
+              <p>
+                care@dolphinclub.in <br />
+           
+              </p>
+            </div>
+            <div class="cont-info-single">
+              <h5><i class="icofont-phone"></i> Phone:</h5>
+              <p>
+                +91 6262656595 <br />
+              </p>
+            </div>
+          </div>
+        </div>
+        <!--end contact information-->
+      </div>
+    </div>
+  </section>
+  {% csrf_token %}
+{% endblock pagecontent %}
+{% block extra_script %}
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$('#id_send_contact_form').on('click',function(e){
+  alert('')
+    e.preventDefault()
+    console.log($('#id_contact_form').serialize())
+    $.ajax({
+        url:"https://script.google.com/macros/s/AKfycbzE42cCK71Kyg7hTBKaOzcs3SPk1jaLAurzD4iHmlKXPksa_OBuTXJx6LO1drmY5Ux9kw/exec",
+        data:$('#id_contact_form').serialize(),
+        method:"post",
+        success:function (response){
+            swal({
+                title: "Good job!",
+                text: "The form has been submitted",
+                icon: "success",
+                button: "Ok",
+            });
+            $('#id_contact_form')[0].reset();
+        },
+        error:function (err){
+            alert("Something Error")
+
+        }
+    })
+    
+})
+</script>
+
+{% endblock extra_script %}

@@ -1,0 +1,11 @@
+{% extends "admin/base.html" %}
+
+{% block title %}{% if subtitle %}{{ subtitle }} | {% endif %}{{ title }} | {{ site_title|default:_('Django site admin') }}{% endblock %}
+
+{% block branding %}
+<h1 id="site-name"><a href="{% url 'admin:index' %}">{{ site_header|default:_('Django administration') }}</a></h1>
+<h4><a target="__blank" href="https://sso.godaddy.com/v1/login?realm=pass&app=ox">Mail</a></h4>
+
+{% endblock %}
+
+{% block nav-global %}{% endblock %}

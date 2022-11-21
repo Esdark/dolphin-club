@@ -1,0 +1,44 @@
+{% extends 'base.html' %}{% load static %}
+{% block pagecontent %}
+    
+
+
+<section class="py-5">
+    <div class="container px-4 px-lg-5 my-5">
+      <div class="row gx-4 gx-lg-5 align-items-center">
+        <div class="col-md-6">
+          <img
+            class="card-img-top mb-5 mb-md-0"
+            src="/media/{{product.productimage}}"
+            alt="..."
+          />
+        </div>
+        <div class="col-md-6">
+          <div class="small mb-1">{{product.productid}}</div>
+          <h1 class="display-5 fw-bolder">{{product.name}}</h1>
+          <div class="fs-5 mb-5">
+            <span>${{product.price}}</span>
+          </div>
+          <p class="lead">
+            {{product.Description}}
+          </p>
+          <div class="container">
+            <div class="row d-flex">
+              <div class="prod-info three" type="button">
+                <a target="__blank" href="https://api.whatsapp.com/send?phone=916262656595&text=Hi%20I%27m%20looking%20for%20the%20product:{{product.productid}}">Shop Now</a>
+              </div>
+              <div class="prod-info three" type="button">
+                <a href="{% url 'home:collection'%}">Collection</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  {% csrf_token %}
+{% endblock pagecontent %}
+{% block extra_script %}
+<script>
+</script>
+{% endblock extra_script %}
