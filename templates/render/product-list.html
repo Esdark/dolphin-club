@@ -1,0 +1,15 @@
+{% for i in productlist %}
+<div class="col-xl-4 col-lg-3 col-6 col-md-6 col-sm-3 py-2">
+    <div class="cardp d-flex flex-column align-items-center">
+      <div class="cardp-img align-items-center">
+        <a href="{% url 'home:product-info' %}?product={{i.productid}}">
+            <img
+              src="/media/{{i.productid__productimage}}"
+              alt=""
+            />
+        </a>
+      </div>
+      <div class="product-name">{{i.productid__name}}</div>
+    </div>
+  </div>
+{% endfor %}

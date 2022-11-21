@@ -1,0 +1,17 @@
+.log
+
+*.pot
+
+*.pyc
+
+*/*/*/__pycache__/
+
+*/*/__pycache__/
+
+*/__pycache__/
+.idea
+# .gitignore~
+local.py
+media/upload/
+db.sqlite3
+media/

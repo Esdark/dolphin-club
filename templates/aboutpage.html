@@ -1,0 +1,45 @@
+{% extends 'base.html' %}{% load static %}
+{% block pagecontent %}
+    
+
+<section id="why-choose-area" class="two" data-scroll-index="1">
+    <div class="container">
+      <div class="row">
+        <!--start why choose image-->
+        <div class="col-lg-5 col-md-4">
+          <div class="why-choose-img d-table">
+            <div class="d-table-cell align-middle">
+              <img
+                class="img-fluid"
+                src="{% static 'images/about.jpg' %}"
+                alt="image"
+              />
+            </div>
+          </div>
+        </div>
+        <!--end why choose image-->
+        <!--start why choose content-->
+        <div class="col-lg-7 col-md-8">
+          <div class="sec-heading mt-5">
+            <h6>About Us</h6>
+            <h2>DOLPHIN CLUB<br />FOR YOU</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic
+              explicabo voluptas nisi iste reiciendis, tempore commodi
+              necessitatibus. Lorem ipsum dolor sit amet consectetur
+              adipisicing elit. Nulla tenetur cum vitae enim? Laudantium saepe
+              nesciunt ex eius iste alias quidem perspiciatis odio,
+              voluptatum, soluta natus nisi tenetur corrupti iusto.
+            </p>
+          </div>
+        </div>
+        <!--end why choose content-->
+      </div>
+    </div>
+  </section>
+  {% csrf_token %}
+{% endblock pagecontent %}
+{% block extra_script %}
+<script>
+</script>
+{% endblock extra_script %}

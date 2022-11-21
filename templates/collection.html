@@ -1,0 +1,151 @@
+{% extends 'base.html' %}{% load static %}
+{% block pagecontent %}
+          
+
+<header id="header" class="mobheader">
+<!--start mainmenu-->
+<div class="mainmenu sticky menuemob">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <button class="navbar-toggler2 mfil" type="button" data-toggle="collapse" data-target="#navbarContent2" aria-controls="navbarContent2" aria-expanded="false" aria-label="Toggle navigation">
+            <h5>Filter</h5>
+          </button>
+          <button class="navbar-toggler3 afill" type="button" data-toggle="collapse" data-target="#navbarContent3" aria-controls="navbarContent3" aria-expanded="false" aria-label="Toggle navigation">
+            <h5>Sort</h5>
+          </button>
+          <!--navbar links-->
+          <div class="collapse navbar-collapse2" id="navbarContent2">
+            <ul class="navbar-nav mx-auto text-center">
+              <div id="inner-box" class="mt-2 mr-1">
+                
+                {% for material in materials %}
+                <div class="my-1">
+                  <label class="tick">{{material.materialname}}
+                    <input type="checkbox"  class="filter-material" value="{{material.materialid}}" />
+                    <span class="check"></span>
+                  </label>
+                </div>
+                {% endfor %}
+              </div>
+            </ul>
+          </div>
+          <!--navbar links-->
+          <div class="collapse navbar-collapse3" id="navbarContent3">
+            <ul class="navbar-nav mx-auto text-center">
+              <div id="inner-box" class="mt-2 mr-1">
+                {% for age in agefilter %}
+                <div class="my-1">
+                  <label class="tick">{{age.description}}
+                    <input type="checkbox" class="filter-age" value="{{age.ageid}}" />
+                    <span class="check"></span>
+                  </label>
+                </div>
+                {% endfor %}
+              </div>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+</div>
+</header>
+  <!--end mainmenu-->
+  <section>
+    <div class="container-fluid">
+      <div class="row px-2">
+        <div class="wrapper">
+          <!-- Sidebar  -->
+          <nav id="sidebar">
+            <ul class="list-unstyled components">
+              <li class="active">
+                <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">MATERIALS</a>
+                <ul class="collapse show list-unstyled" id="homeSubmenu">
+                  <div id="inner-box" class="mt-2 mr-1">
+                    {% for material in materials %}
+                    <div class="my-1">
+                        <label class="tick">{{material.materialname}}
+                        <input type="checkbox" class="filter-material" value="{{material.materialid}}"/>
+                        <span class="check"></span>
+                        </label>
+                    </div>
+                    {% endfor %}
+                  </div>
+                </ul>
+              </li>
+
+              <li>
+                <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Age</a>
+                <ul class="collapse show list-unstyled" id="pageSubmenu">
+                  <div id="inner-box" class="mt-2 mr-1">
+                    {% for age in agefilter %}
+                    <div class="my-1">
+                      <label class="tick">{{age.description}}
+                        <input type="checkbox" class="filter-age" value="{{age.ageid}}"/>
+                        <span class="check"></span>
+                      </label>
+                    </div>
+                    {% endfor %}
+                  </div>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+
+          <!-- Page Content  -->
+          <div class="container">
+            <div class="row" id="id_row_loader">
+              <div class="spinner-border" role="status" style="margin: 10% auto;">
+                <span class="visually-hidden"></span>
+              </div>
+            </div>
+            
+            <div class="row py-3" id="id_product_outerdiv">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  {% csrf_token %}
+{% endblock pagecontent %}
+{% block extra_script %}
+<script>
+    function loadProducts(){
+        $('#id_row_loader').show();
+        $('#id_product_outerdiv').empty();
+        lst_materials = [];
+        lst_age = [];
+        $('.filter-material:checked').each(function () { 
+            lst_materials.push($(this).val())
+        })
+        $('.filter-age:checked').each(function () { 
+          lst_age.push($(this).val())
+        })
+        console.log(lst_age)
+        $.ajax({
+            type: "POST",
+            url: "{% url 'home:product-list' %}",
+            data: {
+              'materials': lst_materials,
+              'agegroup':lst_age
+            },
+            headers: {
+                "X-CSRFToken": $('body [name="csrfmiddlewaretoken"]').val()
+            },
+            success: function (response) {
+              console.log(response)
+              if(response.STATUS ==1 ){
+                $('#id_row_loader').hide();
+                $('#id_product_outerdiv').append(response.html)
+              }
+              $('#message').html("<h2>Contact Form Submitted!</h2>")
+            }
+        });
+    }
+    $('body').on('change','.filter-material,.filter-age',function(){
+      loadProducts();
+    })
+    loadProducts()
+</script>
+{% endblock extra_script %}
